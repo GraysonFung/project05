@@ -1,0 +1,68 @@
+@charset "utf-8";
+/*全局样式*/
+body{font-size:12px;font-family:"宋体";background:#fff;}
+body,p,dl,li,ul,ol,dt,dd,div,input,h1,h3,img{margin:0px;padding:0px;}
+ul{list-style:none;}
+img{border:none;}
+a{text-decoration:none;outline:none;}
+a:active{star:expression(this.onFocus=this.blur());}
+.clear_float{clear:both;margin:0px auto;}
+
+/*头部样式*/
+.header{width:959px;height:99px;margin:0px auto;}
+	.logo{width:339px;height:99px;float:left;background:url(../images/logo.jpg);}
+	.header_right{width:620px;height:99px;float:left;overflow:hidden;}
+	.header_phone{width:620px;margin-top:25px;text-align:right;}
+	.header_phone a{font-size:18px;color:#000;font-weight:bold;}
+	.header_phone a span{color:#f90;position:relative;}
+	.header_search{width:620px;text-align:right;}
+	.header_search input{float:right;}
+	#input{font-size:12px;height:20px;padding:7px 0px 8px 10px;border:0px;background:url(../images/search_inp.jpg) no-repeat;}
+	
+/*导航栏样式*/
+.menu_bg{height:35px;width:100%;background:url(../images/menu_bg.jpg);}
+	.menu{width:959px;height:35px;padding-left:3px;margin:0px auto;}
+	.menu a{display:block;width:90px;line-height:35px;height:35px;float:left;text-align:center;font-size:14px;color:#fff;font-weight:bold;margin-right:15px;font-family:"微软雅黑";}
+	.menu a:hover{background:url(../images/menu_hover_bg.jpg)}
+	#menu_index{margin-right:0px;}
+	a.menu_current{background:url(../images/menu_hover_bg.jpg);}
+	
+/*banner样式*/
+.banner{width:959px;height:270px;margin:8px auto auto auto;position:relative;}
+	#banner_pic01{width:959px;height:270px;position:absolute;}
+	#banner_pic02{width:959px;height:270px;position:absolute;display:none;}
+	#banner_pic03{width:959px;height:270px;position:absolute;display:none;}
+.banner_index{width:959px;margin:0 auto;text-align:center;position:relative;top:-35px;}
+	.banner_index a{margin-right:10px;}
+	#banner{width:959px;margin:0px auto;}
+	
+/*footer样式*/	
+.footer{height:87px;width:100%;border-top:1px solid #ccc;background:url(../images/footer_bg.jpg);text-align:center;line-height:30px;margin-top:50px;padding-top:25px;}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
