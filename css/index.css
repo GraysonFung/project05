@@ -37,10 +37,6 @@
 	.pic_box{width:1760px;height:150px;position:relative;left:-440px;margin-top:30px;}
 	.pic_box div{width:880px;float:left;position:relative;}
 	.pic_box div img{margin:0px 10px;float:left;}
-#two_arrow{vertical-align:middle;position:relative;top:-2px;}
-	
-	
-	
-	
-	
+.two_arrow{vertical-align:middle;position:relative;top:-2px;}
+
 

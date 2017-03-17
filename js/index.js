@@ -1,5 +1,5 @@
 ﻿
-/*图片滚动代码*****************************************/
+/* 下部分图片滚动代码 */
 var list1 = document.getElementById("pic_box01");
 var list2 = document.getElementById("pic_box02");
 var list1_left = 0;
@@ -35,31 +35,29 @@ function give(){
 }
 function go_left(){
 	if(list2_left >= 440){
-		list2_left = -1320;	
+		list2_left = -1320;
 	}
 	if(list1_left >= 1320){
-		list1_left = -440;	
+		list1_left = -440;
 	}
 }
 function go_right(){
 	if(list2_left <= -1320){
-		list2_left = 440;	
+		list2_left = 440;
 	}
 	if(list1_left <= -440){
-		list1_left = 1320;	
+		list1_left = 1320;
 	}
 }
-
-var show_s=setInterval(move_left,4000); 
+var show_s=setInterval(move_left,4000);
 $("#show").mouseover(function(){clearInterval(show_s);});
 $("#show").mouseout(function(){show_s = setInterval(move_left,4000);});
 
-
-
+//箭头icon图标翻转效果
 var two_arrow_i = 10;
 var two_arrow_b =true;
 function two_arrow(){
-	$("#two_arrow").css("height",two_arrow_i+"px");
+	$(".two_arrow").css("height",two_arrow_i+"px");
 	if(two_arrow_b){
 		two_arrow_i -=2;
 	}else{
@@ -70,13 +68,10 @@ function two_arrow(){
 	}
 	if(two_arrow_i > 10){
 		two_arrow_b = true;
-		//clearInterval(two_arrow_setime);
-		//two_arrow_setime1=setInterval(function(){clearInterval(two_arrow_setime1);two_arrow_setime = setInterval(two_arrow,100);},100);
 	}
 }
 setInterval(two_arrow,100);
-	
-	
+
 
 
 
