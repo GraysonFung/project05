@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8" />
+<title>支付页</title>
+<link type="text/css" rel="stylesheet" href="css/base.css">
+<link type="text/css" rel="stylesheet" href="css/pay.css">
+</head>
+<body>
+<div class="wrapper wrap" id="client">
+  <aside id="aside">
+      <a href="index.html"><img src="images/logo.jpg" width="91.2%" height="auto"></a>
+      <menu>
+          <a href="index.html"><li>首页</li></a>
+          <a href="about_us.html"><li>品牌介绍</li></a>
+          <a href="news.html"><li>新闻中心</li></a>
+          <a href="product.html"><li>产品中心</li></a>
+          <a href="contact_us.html"><li>联系我们</li></a>
+          <a href="user.html"><li>会员中心</li></a>
+      </menu>
+      <span><img src="images/base_buycar.png" width="10%" height="auto" style="position:absolute;top:10%;left:20%;">&nbsp;&nbsp;<a href="shop_cart.html" style="color:red;">购物车</a></span>
+      <ul>
+          <li class="one"><a href="login.html">登录</a></li>
+          <li style="text-decoration:none;width:auto;">|</li>
+          <li class="one"><a href="register.html">注册</a></li>
+      </ul>
+      <p>版权所有：姜太公有限公司</p>
+      <p>粤ICP备：12345678号-1</p>
+      <p>联系电话：400-000-0000</p>
+  </aside>
+  <div class="content" id="on">
+    <article>
+      <section class="contain">
+        <p class="fload1">支付页</p>
+        <div class="fload2"></div>
+        <div class="fload3" id="fload3">
+          <section>
+            <div>
+              <p><span>送至：</span> 广东省 广州市 萝岗区 开源大道11号</p>
+              <p><span>收件人：</span>杰少</p>
+              <p><span>联系方式：</span>15913111324</p>
+            </div>
+            <div id="change_pay">
+              <a href="address.html"><img src="images/buy_pen.png" alt="" /></a>
+            </div>
+          </section>
+          <section>
+            <span>订单号：123456789</span>
+            <span>下单时间：2016-09-06</span>
+          </section>
+          <section>
+            <a href="#"><img src="images/buty_product.gif" class="product"></a>
+            <div class="buy_text">
+              <a href="#"><p>露营液压自动帐篷</p></a>
+              <p>价 格 ： ￥<span>333.00</span>元</p>
+              <p>颜 色 ： <span>天蓝色</span></p>
+              <p>数 量 ：ｘ
+                  <span> 2</span>
+              </p>
+            </div>
+          </section>
+          <section>
+            <div>
+              <div>发票信息：</div>
+              <div>
+                <label><input type="radio" name="receip" value="yes_receip" />需要发票</label>
+                <label><input type="radio" name="receip" value="no_receip" checked />不需要发票</label>
+                <p>普通发票（电子)&nbsp;&nbsp;&nbsp;&nbsp;个人&nbsp;&nbsp;&nbsp;明细&nbsp;&nbsp;&nbsp;<a href="#">修改</a></p>
+              </div>
+            </div>
+            <div id="pay_way">
+              <div>支付方式：</div>
+              <label><input type="button" value="货到付款" /></label>
+              <label><input class="actived_pay" type="button" value="在线支付" /></label>
+            </div>
+          </section>
+        </div>
+        <div class="fload4" id="fload4">
+             <span>合计：￥<b >666</b>.000元</span>
+             <input type="submit" id="btn_submit" value="去 结 算 (4)"  />
+        </div>
+      </section>
+    </article>
+  </div>
+</div>
+</body>
+
+<script src="js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="js/pay.js"></script>
+<script>
+    //外层自适应
+window.onload=function reon(){
+  var w=window.innerWidth;
+  // var winH=w*0.5625;
+  var winH=w*0.5558;
+  ww=window.innerHeight;
+  if(ww>winH){
+    winH=ww;
+  $("#on").css('height',winH+'px');
+}
+  $("#aside").css('height',winH+'px');
+  $("#client").css('height',winH+'px');
+  $("#on").css('height',winH+'px');
+};
+window.onresize=function(){
+   location=location
+};
+
+</script>
+</html>

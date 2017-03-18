@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8" />
+<title>产品中心</title>
+<link type="text/css" rel="stylesheet" href="css/base.css">
+<link type="text/css" rel="stylesheet" href="css/product.css">
+</head>
+
+<body>
+<div class="wrapper" id="client">
+  <aside id="aside">
+      <a href="index.html"><img src="images/logo.jpg" width="91.2%" height="auto"></a>
+      <menu>
+          <a href="index.html"><li>首页</li></a>
+          <a href="about_us.html"><li>品牌介绍</li></a>
+          <a href="news.html"><li>新闻中心</li></a>
+          <a href="product.html" class="actived_nav"><li>产品中心</li></a>
+          <a href="contact_us.html"><li>联系我们</li></a>
+          <a href="user.html"><li>会员中心</li></a>
+      </menu>
+      <span><img src="images/base_buycar.png" width="10%" height="auto" style="position:absolute;top:10%;left:20%;">&nbsp;&nbsp;<a href="shop_cart.html" >购物车</a></span>
+      <ul>
+          <li class="one"><a href="login.html">登录</a></li>
+          <li style="text-decoration:none;width:auto;">|</li>
+          <li class="one"><a href="register.html">注册</a></li>
+      </ul>
+      <p>版权所有：姜太公有限公司</p>
+      <p>粤ICP备：12345678号-1</p>
+      <p>联系电话：400-000-0000</p>
+  </aside>
+    <div class="content" id="content">
+    	<div class="inner">
+        	<h2>产品中心</h2><span>PRODUCT CENTER</span>
+            <p>您当前的位置 > 产品中心</p>
+            <div class="left">
+            	<ul>
+                	<li>帐篷</li>
+                    <li>水池</li>
+                    <li>充气艇</li>
+                    <li>空气床</li>
+                    <li>防水包</li>
+                    <li>水上娱乐</li>
+                    <li>涉水防护服</li>
+                    <li>大型充气玩具</li>
+                </ul>
+                
+            </div>
+            <div class="right">
+            	<li><img src="images/scollone.jpg" width="100%" height="auto"><p>露营液压自动帐篷<br>￥333.00<span>加入购物车</span></p></li>
+                <li><img src="images/scollone.jpg" width="100%" height="auto"><p>露营液压自动帐篷<br>￥333.00<span>加入购物车</span></p></li>
+                <li style="margin-top:5%;"><img src="images/scollone.jpg" width="100%" height="auto"><p>露营液压自动帐篷<br>￥333.00<span>加入购物车</span></p></li>
+                <li style="margin-top:5%;"><img src="images/scollone.jpg" width="100%" height="auto"><p>露营液压自动帐篷<br>￥333.00<span>加入购物车</span></p></li>
+                <ul>
+                	<li class="ye"><上一页</li>
+                    <li style="background:none;color:#fff;">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li style="background:none;color:#fff;">...</li>
+                    <li class="ye">下一页></li>
+                    <p>&nbsp;共10页&nbsp;到第&nbsp;<input class="text" type="text">&nbsp;页&nbsp;<input class="button"type="button" value="确定"></p>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<script src="js/jquery-2.1.0.min.js"></script>
+<script>
+window.onload=function reon(){
+//var winH=window.innerHeight();
+	var winH=$(".content").height();
+	$("#aside").css('height',winH+'px');
+	$("#client").css('height',winH+'px');
+	//$(".content").css('height',winH-10+'px');	
+	}
+window.onresize=function(){ location=location }; 
+</script>
+
+
+</html>

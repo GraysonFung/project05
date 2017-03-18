@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0; padding:0; font-family:"微软雅黑";}
+.wrap{width:87%; height:auto; background:url(../images/bgimag.jpg) 0 0; float:left;}
+.order_content{ width:60%; height:650px/* 700px */; background:rgba(0,0,0,0.6); margin-left:20%; margin-top:5%; margin-bottom:5%; float:left;}
+#title{color:#FFF; text-align:center; font-size:22px; margin-top:20px;}
+.side{width:20%; height:595px; float:left;  margin-left:13.5%; margin-top:25px;}
+.side img{display:inline-block;vertical-align:top;padding-top:3px;}
+.side #hyzx{width:100%; height:30px; background-color:#ffff99; text-align:center; line-height:30px; font-size:12px; border-bottom:#999 solid 1px;}
+.side ul{width:100%; background-color:#FFF; font-size:12px; padding:0.1px;border-bottom:#999 solid 1px;}
+.side ul p{margin-top:5px!important;}
+.side ul li{ width:60%; height:20px; list-style:none; margin-left:24%; margin-top:2px;}
+.side ul li a:hover{ text-decoration:underline;}
+
+.order_container{width:50%; height:550px; float:left; margin-left:3%; margin-top:25px;}
+.order_container #wddd{width:92%; height:30px; background-color:#ffff99; line-height:30px; font-size:12px; padding-left:8%;}
+#order_container_title{width:100%; height:30px; background-color:#FFF; float:left; margin-top:15px;border:#FFF 1px solid;}
+#order_container_title li{float:left; list-style:none; font-size:12px; text-align:center; line-height:30px; width:25%;}
+#order_num{width:100%; height:30px; border:#CCC 1px solid; float:left; font-size:11px; color:#FFF; line-height:30px;}
+.conduct{width:100%; height:195px; border:#999 solid 1px; float:left;}
+#conduct_detailes{float:left; margin-top:10px; margin-left:10%;list-style:none;color:#FFF;}
+#conduct_detailes li{height:34px; line-height:32px; font-size:11px;}
+.conduct_two{width:100%; height:165px; border:#999 solid 1px; float:left;}
+

@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+aside menu{width:100%;height:30%;}
+.wrapper{background:url(../images/pro_banner.jpg) center;}
+.content{width:87%;height:auto;float:left;}
+.inner{width:71.8%;height:auto;background:rgba(0,0,0,0.6);margin:5% 14.1%;float:left;min-width:842px;}
+.inner > h2{width:100%;text-align:center;color:#fff;padding-top:2%;}
+.inner > span{display:block;width:100%;color:#fff;text-align:center;margin-top:5px;}
+.inner > p{width:90%;text-align:left;color:#fff;margin:3% 10%;}
+.inner .left{width:16.7%;background:#e5e4e4;height:500px;margin-left:12%;float:left;margin-bottom:10%;}
+.inner .left ul{width:100%;height:55%;margin-top:5%;float:left;}
+.inner .left ul li{width:100%;height:12.5%;text-align:center;font-size:14px;}
+
+.right{width:59.3%;height:480px;float:left;}
+.right > li{width:42%;height:auto;float:left;margin-left:8%;position:relative;min-width:209px;}
+.right > li p{width:100%;height:25%;background:#666;position:absolute;bottom:0;font-size:13px;color:#fff;font-family:"微软雅黑";line-height:2em;}
+.right > li p span{display:block;width:40%;height:50%; background:#C00;float:right;text-align:center;margin-top:-6%;margin-right:2%;min-width:83px;}
+.right ul{float:left;width:90%;height:auto;margin-top:4%;margin-left:8%;color:#fff;}
+.right ul li{float:left;width:25px;height:25px;background:#fff;color:#000;margin-left:5px;line-height:25px;text-align:center; cursor:pointer;}
+.right ul li.ye{width:60px;height:25px;font-size:13px;}
+.right ul p{float:left;color:#fff;font-size:13px;}
+.right input.text,.right input.button{width:25px;height:25px;background:#fff;color:#000;line-height:25px;text-align:center;}
+.right input.button{width:40px;}

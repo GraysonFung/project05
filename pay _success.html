@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8" />
+<title>付款成功</title>
+<link type="text/css" rel="stylesheet" href="css/base.css">
+<link type="text/css" rel="stylesheet" href="css/pay _success.css">
+</head>
+<body>
+<div class="wrapper wrap" id="client">
+  <aside id="aside">
+      <a href="index.html"><img src="images/logo.jpg" width="91.2%" height="auto"></a>
+      <menu>
+          <a href="index.html"><li>首页</li></a>
+          <a href="about_us.html"><li>品牌介绍</li></a>
+          <a href="news.html"><li>新闻中心</li></a>
+          <a href="product.html"><li>产品中心</li></a>
+          <a href="contact_us.html"><li>联系我们</li></a>
+          <a href="user.html"><li>会员中心</li></a>
+      </menu>
+      <span><img src="images/base_buycar.png" width="10%" height="auto" style="position:absolute;top:10%;left:20%;">&nbsp;&nbsp;<a href="shop_cart.html" style="color:red;">购物车</a></span>
+      <ul>
+          <li class="one"><a href="login.html">登录</a></li>
+          <li style="text-decoration:none;width:auto;">|</li>
+          <li class="one"><a href="register.html">注册</a></li>
+      </ul>
+      <p>版权所有：姜太公有限公司</p>
+      <p>粤ICP备：12345678号-1</p>
+      <p>联系电话：400-000-0000</p>
+  </aside>
+  <div class="content" id="on">
+    <article>
+      <section class="contain">
+        <p class="fload1">付款成功</p>
+        <div class="fload2">
+          <div>
+            <img id="pic_success" src="images/buy_success.png" alt="" />
+          </div>
+          <div class="text_pay_success">
+            <p>您的订单,付款成功了！</p>
+            <p>付款金额<span>666.00</span>元</p>
+          </div>
+          <strong><a href="order_details.html">查看订单详细</a></strong>
+        </div>
+        <div class="fload3" id="fload3">
+          <input type="submit" value="已付款" />
+        </div>
+      </section>
+    </article>
+  </div>
+</div>
+
+<script src="js/jquery-2.1.0.min.js"></script>
+<script>
+    //外层自适应
+window.onload=function reon(){
+  var w=window.innerWidth;
+  // var winH=w*0.5625;
+  var winH=w*0.5558;
+  ww=window.innerHeight;
+  if(ww>winH){
+    winH=ww;
+  $("#on").css('height',winH+'px');
+}
+  $("#aside").css('height',winH+'px');
+  $("#client").css('height',winH+'px');
+  $("#on").css('height',winH+'px');
+};
+window.onresize=function(){
+   location=location
+};
+
+</script>
+</body>
+</html>

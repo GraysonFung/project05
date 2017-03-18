@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8" />
+<title>登录</title>
+<link type="text/css" rel="stylesheet" href="css/base.css">
+<link type="text/css" rel="stylesheet" href="css/login.css">
+
+</head>
+
+<body>
+<div class="wrapper" id="client">
+  <aside id="aside">
+      <a href="index.html"><img src="images/logo.jpg" width="91.2%" height="auto"></a>
+      <menu>
+          <a href="index.html"><li>首页</li></a>
+          <a href="about_us.html"><li>品牌介绍</li></a>
+          <a href="news.html"><li>新闻中心</li></a>
+          <a href="product.html"><li>产品中心</li></a>
+          <a href="contact_us.html"><li>联系我们</li></a>
+          <a href="user.html"><li>会员中心</li></a>
+      </menu>
+      <span><img src="images/base_buycar.png" width="10%" height="auto" style="position:absolute;top:10%;left:20%;">&nbsp;&nbsp;<a href="shop_cart.html">购物车</a></span>
+      <ul>
+          <li class="one"><a href="login.html" style="color:red;">登录</a></li>
+          <li style="text-decoration:none;width:auto;">|</li>
+          <li class="one"><a href="register.html">注册</a></li>
+      </ul>
+      <p>版权所有：姜太公有限公司</p>
+      <p>粤ICP备：12345678号-1</p>
+      <p>联系电话：400-000-0000</p>
+  </aside>
+            <div class="wrap" id="on">
+            <div class="content" style="margin-bottom:19%;">
+                <p id="title">登录</p>
+                <div class="number"><label style="margin-left:2%;">账号：</label><input class="input" type="text" name="number" value="" placeholder="用户名 / 邮箱 / 手机号" size="14px;"onclick="document.getElementById('a').innerHTML='';" onblur="if(this.value==''){document.getElementById('a').innerHTML='账号不能为空！';}"/><span style="color:#F00;" id="a"></span></div><br/>
+                <div class="cipher"><label style="margin-left:2%;">密码：</label><input class="input" type="password" name="pw" value="" placeholder="登录密码" size="14px;"onclick="this.style.border='none';document.getElementById('b').innerHTML='';" onblur="this.style.border='1px #fff solid';if(this.value==''){document.getElementById('b').innerHTML='密码不能为空！';}"/><span style="color:#F00;" id="b"></span></div><br/>
+                <p style="color:#fff; margin-left:37.5%;">忘记登录密码？<span style="margin-left:10%;">立即注册</span></p>
+            	<p><input class="button" type="button" value="登录" /><span id="c"></span></p>
+            </div>
+        </div>
+
+
+</div>
+</body>
+
+<script src="js/jquery-2.1.0.min.js"></script>
+<script>
+    //外层自适应
+window.onload=function reon(){
+  var w=window.innerWidth;
+  var winH=w*0.5558;
+  ww=window.innerHeight;
+  if(ww>winH){
+    winH=ww;
+  $("#on").css('height',winH+'px');
+}
+  $("#aside").css('height',winH+'px');
+  $("#client").css('height',winH+'px');
+  $("#on").css('height',winH+'px');
+};
+window.onresize=function(){
+   location=location
+};
+
+</script>
+
+</html>

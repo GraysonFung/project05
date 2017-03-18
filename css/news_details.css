@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0; padding:0; font-family:"微软雅黑";}
+.wrap{width:87%;height:auto;float:left;position:relative;overflow:hidden;background:#666; background:url(../images/bgimag.jpg) 0 0; }
+/*.wrap{ width:100%; height:auto; background:url(../images/bgimag.jpg) fixed center; float:left;}*/
+.content{width:60%;background:rgba(0,0,0,0.6); margin-left:20%; float:left; }
+.content #title{ color:#FFF; text-align:center; font-size:18px; margin-top:20px; }
+.content #news_title{width:60%; height:30px; background-color:#ffffff; font-size:11px; text-align:center; line-height:30px; margin-left:20%; margin-top:30px;}
+.content #news_title span{float:right;}
+.content, .mCustomScrollbar _mCS_1{width:64%; height:350px; margin-left:18%; margin-top:10px;scrollbar-track-color:#000; float:left;  }
+.content #shar{float:left; width:60%; margin-left:20%; margin-top:30px;}
+.content #shar li{float:left; list-style:none; color:#CCC; margin-left:2%; font-size:12px;}
+.content #shar li img{width:80%; height:auto;}
+.content #footer{float:left;width:60%; margin-left:20%; margin-top:20px;}
+.content #footer li{ list-style:none; color:#CCC; margin-top:10px; font-size:12px;}
+.content #footer li a:hover{color:#C00;}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<title>首页</title>
+<link type="text/css" rel="stylesheet" href="css/base.css">
+<link type="text/css" rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+<div class="wrapper" id="client">
+	<aside id="aside">
+    	<a href="index.html"><img src="images/logo.jpg" width="91.2%" height="auto"></a>
+    	<menu>
+        	<a href="index.html" class="actived_nav"><li>首页</li></a>
+            <a href="about_us.html"><li>品牌介绍</li></a>
+            <a href="news.html"><li>新闻中心</li></a>
+            <a href="product.html"><li>产品中心</li></a>
+            <a href="contact_us.html"><li>联系我们</li></a>
+            <a href="user.html"><li>会员中心</li></a>
+        </menu>
+        <span><img src="images/base_buycar.png" width="10%" height="auto" style="position:absolute;top:10%;left:20%;">&nbsp;&nbsp;<a href="shop_cart.html">购物车</a></span>
+        <ul>
+        	<li class="one"><a href="login.html">登录</a></li>
+            <li style="text-decoration:none;width:auto;">|</li>
+            <li class="one"><a href="register.html">注册</a></li>
+        </ul>
+        <p>版权所有：姜太公有限公司</p>
+        <p>粤ICP备：12345678号-1</p>
+        <p>联系电话：400-000-0000</p>
+	</aside>
+    <div class="content" id="on">
+        <!-- <div class="content" id="content"> -->
+        <div class="banner" id="banner_pic_box">
+            <div id="banner_pic01"><a href="#"><img src="images/indexbanner.jpg" alt="banner01"></a></div>
+            <div id="banner_pic02"><a href="#"><img src="images/banner2.jpg" alt="banner02"></a></div>
+            <div id="banner_pic03"><a href="#"><img src="images/banner3.jpg" alt="banner03"></a></div>
+        </div>
+        <nav id="nav">
+            <li id="banner_index01"></li>
+            <li id="banner_index02"></li>
+            <li id="banner_index03"></li>
+        </nav>
+        <div class="right">
+        	<span class="a"><img src="images/onright.jpg" width="100%" height="100%"></span>
+            <span class="b" style="display:none;"><img src="images/onleft.jpg" width="100%" height="100%"></span>
+            <div>
+                <ul>
+                	<li><img class="top" src="images/top.png" width="16%" height="auto"></a></li>
+                	<li><img src="images/scollone.jpg" width="100%" height="auto"></li>
+                	<li><img src="images/scolltwo.jpg" width="100%" height="auto"></li>
+                	<li><img src="images/scrollthree.jpg" width="100%" height="auto"></li>
+                    <li><img class="down" src="images/down.png" width="16%" height="auto"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-2.1.0.min.js"></script>
+<script src="js/index.js"></script>
+<script>
+    //外层自适应
+window.onload=function reon(){
+  var w=window.innerWidth;
+  // var winH=w*0.5625;
+  var winH=w*0.5558;
+  ww=window.innerHeight;
+  if(ww>winH){
+    winH=ww;
+  $("#on").css('height',winH+'px');
+}
+  $("#aside").css('height',winH+'px');
+  $("#client").css('height',winH+'px');
+  $("#on").css('height',winH+'px');
+};
+window.onresize=function(){
+   location=location
+};
+
+</script>
+</body>
+</html>
