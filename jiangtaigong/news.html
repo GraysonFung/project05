@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8" />
+<title>新闻中心</title>
+<link type="text/css" rel="stylesheet" href="css/base.css">
+<link type="text/css" rel="stylesheet" href="css/news.css">
+<script src="js/jquery.js"></script>
+
+</head>
+
+<body>
+<div class="wrapper" id="client" style="min-width:1130px;">
+    <aside id="aside">
+        <a href="index.html"><img src="images/logo.jpg" width="91.2%" height="auto"></a>
+        <menu>
+            <a href="index.html"><li>首页</li></a>
+            <a href="about_us.html"><li>品牌介绍</li></a>
+            <a href="news.html" class="actived_nav"><li>新闻中心</li></a>
+            <a href="product.html"><li>产品中心</li></a>
+            <a href="contact_us.html"><li>联系我们</li></a>
+            <a href="user.html"><li>会员中心</li></a>
+        </menu>
+        <span><img src="images/base_buycar.png" width="10%" height="auto" style="position:absolute;top:10%;left:20%;">&nbsp;&nbsp;<a href="shop_cart.html">购物车</a></span>
+        <ul>
+            <li class="one"><a href="login.html">登录</a></li>
+            <li style="text-decoration:none;width:auto;">|</li>
+            <li class="one"><a href="register.html">注册</a></li>
+        </ul>
+        <p>版权所有：姜太公有限公司</p>
+        <p>粤ICP备：12345678号-1</p>
+        <p>联系电话：400-000-0000</p>
+    </aside>
+<div class="wrap" id="on" >
+	<div class="news_center">
+    	<p id="title">新闻中心</br>NEWS CENTER</p>
+        <div id="container">
+        	<p style="color:#FFF; font-size:11px; margin-top:20px;">您当前的位置>新闻中心</p>
+            <p id="time"></a> <span><</span>  <a style="background-color:#0066cc; color:#FFF;">ALL</a> <a>2016</a> <a>2015</a> <a>2014</a> <span style="float:right;">></span> </p>
+            <p id="line"><a></a></p>
+            <ul id="list">
+            	<li style="margin-top:50px;"><a href="news_details.html">姜太公有限公司变更公司名称、证券简称暨完成变更登记的公告<a><span>2016-07-19</span></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</div>
+</body>
+
+<script>
+window.onload=function reon(){
+	var winH=$("#on").height();
+	$("#aside").css('height',winH+'px');
+	$("#client").css('height',winH+'px');
+}
+window.onresize=function(){ location=location };
+
+
+
+</script>
+<script type="text/javascript">
+	var Olist=document.getElementById("list");
+	for(var i=0;i<10;i++) {
+		var newnode=document.createElement("li");
+		newnode.innerHTML="<li>无兄弟，不篮球！姜太公篮球争霸赛正式开战！<span>2016-07-18</span></li>";
+		Olist.appendChild(newnode);
+	}
+
+</script>
+</html>

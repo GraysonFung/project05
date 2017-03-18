@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8" />
+<title>首页</title>
+<link type="text/css" rel="stylesheet" href="css/base.css">
+<link type="text/css" rel="stylesheet" href="css/index.css">
+<script src="js/jquery.js"></script>
+
+</head>
+
+<body>
+<div class="wrapper" id="client">
+	<aside id="aside">
+    	<a href="index.html"><img src="images/logo.jpg" width="91.2%" height="auto"></a>
+    	<menu>
+        	<a href="index.html" class="actived_nav"><li>首页</li></a>
+            <a href="about_us.html"><li>品牌介绍</li></a>
+            <a href="news.html"><li>新闻中心</li></a>
+            <a href="product.html"><li>产品中心</li></a>
+            <a href="contact_us.html"><li>联系我们</li></a>
+            <a href="user.html"><li>会员中心</li></a>
+        </menu>
+        <span><img src="images/base_buycar.png" width="10%" height="auto" style="position:absolute;top:10%;left:20%;">&nbsp;&nbsp;<a href="shop_cart.html">购物车</a></span>
+        <ul>
+        	<li class="one"><a href="login.html">登录</a></li>
+            <li style="text-decoration:none;width:auto;">|</li>
+            <li class="one"><a href="register.html">注册</a></li>
+        </ul>
+        <p>版权所有：姜太公有限公司</p>
+        <p>粤ICP备：12345678号-1</p>
+        <p>联系电话：400-000-0000</p>
+	</aside>
+    <div class="content" id="content">
+    	<ul class="picart" id="inner">
+    		<li><img class="on" src="images/indexbanner.jpg" width="100%" height="auto" style="vertical-align:top;"></li>
+        	<li><img src="images/banner2.jpg" width="100%" height="auto" style="vertical-align:top;"></li>
+        	<li><img src="images/banner3.jpg" width="100%" height="auto" style="vertical-align:top;"></li>
+    	</ul>
+        <nav id="nav">
+        	<li></li>
+            <li></li>
+            <li></li>
+        </nav>
+
+        <div class="right">
+        	<span class="a"><img src="images/onright.jpg" width="100%" height="100%"></span>
+            <span class="b" style="display:none;"><img src="images/onleft.jpg" width="100%" height="100%"></span>
+            <div>
+                <ul>
+                	<li><img class="top" src="images/top.png" width="16%" height="auto"></a></li>
+                	<li><img src="images/scollone.jpg" width="100%" height="auto"></li>
+                	<li><img src="images/scolltwo.jpg" width="100%" height="auto"></li>
+                	<li><img src="images/scrollthree.jpg" width="100%" height="auto"></li>
+                    <li><img class="down" src="images/down.png" width="16%" height="auto"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<script>
+window.onload=function reon(){
+	var winH=$(".on").height();
+	$("#aside").css('height',winH+'px');
+	$("#client").css('height',winH+'px');
+	$(".content").css('height',winH+'px');
+}
+window.onresize=function(){
+    location=location
+};
+$(".a").click(function(){
+	$(".right").animate({right:'-15%'},"slow");
+	$(".a").css("display","none");
+	$(".b").css("display","block");
+	})
+	$(".b").click(function(){
+	$(".right").animate({right:'0'},"slow");
+	$(".b").css("display","none");
+	$(".a").css("display","block");
+})
+</script>
+<!--<script src="js/slider.js"></script>-->
+</html>

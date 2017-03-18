@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+aside menu{width:100%;height:40%;}
+.wrapper{background:url(../images/detail_banner.jpg) center;}
+.content{width:87%;height:auto;float:left;}
+.inner{width:71.8%;height:auto;background:rgba(0,0,0,0.6);margin:5% 14.1%;float:left;min-width:842px;}
+.inner > h2{width:100%;text-align:center;color:#fff;padding-top:2%;}
+.inner > span{display:block;width:100%;color:#fff;text-align:center;margin-top:5px;}
+.inner > p{width:90%;text-align:left;color:#fff;margin:3% 10%;}
+.inner .left{width:16.7%;background:#e5e4e4;height:350px;margin-left:12%;float:left;margin-bottom:10%;}
+.inner .left ul{width:100%;height:100%;margin-top:10%;float:left;}
+.inner .left ul li{width:100%;height:11.5%;text-align:center;font-size:14px;}
+
+.right{width:59.3%;height:350px;float:left;}

@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+.content{width:87%;height:auto;float:left;position:relative;overflow:hidden;background:#666;}
+.picart{display:block;width:300%;height:auto;position:absolute;left:0;top:0;}
+.picart li{display:block;width:33.333%;height:auto;float:left;background:#eee;}
+#nav{width:30%;height:6px;position:absolute;bottom:5%;left:39.5%;}
+#nav li{display:block;float:left;width:17%;height:6px;margin-right:10%;font-family:Arial;background:#fff;border-radius:4px;cursor:pointer;}
+#nav :hover{background:#ff9900;}
+/*#inner{transition: left 2s;
+}*/
+.right{width:15%;height:74%;background:#fff;z-index:999;position:absolute;right:0;top:13%;}
+.right .a,.b{width:20%;height:12.5%;position:absolute;left:-20%;top:43.75%;cursor:pointer;}
+.right .top,.right .down{margin:3% 42%;cursor:pointer;}
+.right img{float:left;margin-top:0;}
+
