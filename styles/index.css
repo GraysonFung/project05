@@ -1,0 +1,155 @@
+body{
+	margin-bottom:15px;
+}
+
+/*页面左部分元素样式设置*/
+.left_section blockquote{
+	margin-top:10px;
+	border-left: 0;
+}
+.my_pic{
+	display: inline-block;
+	width: 250px;
+}
+#left_table tr td{
+	border-top:none;
+	padding:5px 10px;
+}
+#left_table{
+	display: inline-block;
+	width:200px;
+	margin:0;
+}
+#left_table tr:hover{
+	background:#DCD8D8;
+}
+.per_int{
+	display:inline-block;
+	width:150px;
+}
+.my_add .row {
+	margin-top:8px;
+}
+.my_add .row div{
+	padding-right:0;
+	padding-left:0;
+	margin-right:0;
+}
+.mailto{
+	color:#06134F;
+}
+.my_add .row img{
+	max-width:14px;
+}
+.my_add .row .qq_icon{
+	max-width:12px;
+}
+
+/*页面左部分响应式调试*/
+@media screen and (min-width: 768px) and (max-width: 1199px){
+  .my_add .row div:first-child{
+  	width:90px;
+  	margin-top:5px;
+  }
+  .my_add .row div:nth-child(2){
+		/*text-indent:2em;*/
+		padding-left:24px;
+  }
+	.my_add .row {
+		margin-top:4px;
+		margin-left:10px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.my_add{
+		width:260px;
+		display:inline-block;
+	}
+}
+
+/*页面右部分元素样式设置*/
+#right_section .jumbotron{
+	background:#DCE7E6;
+		padding:10px 20px;
+		margin-bottom:0;
+}
+.jumbotron blockquote{
+	padding:5px 0 5px 10px;
+	margin:5px 0;
+}
+.jumbotron .study_exp{
+	font-size:14px;
+	margin:0;
+}
+.my_skill{
+	padding-left:20px;
+}
+.my_skill p{
+	font-size:14px;
+	margin-bottom:10px;
+}
+.jumbotron .progress{
+	margin-left:30px;
+	margin-bottom:10px;
+}
+#right_section dl{
+	margin-bottom:0;
+}
+#right_section .my_edu_exp dd p{
+	text-indent:2em;
+}
+#right_section .my_edu_exp dd{
+	padding-left:20px;
+}
+#right_section .page-header{
+	margin:20px 0 20px;
+}
+.pro_panel_body{
+	margin:0;
+}
+.pro_panel_body>div{
+	padding:0 6px;
+}
+.proj_exp{
+	margin-top:-20px;
+}
+.proj_exp img{
+	min-height:105px;
+}
+.proj_exp .thumbnail{
+	margin-bottom:2px;
+}
+.proj_exp h3{
+	font-weight:bold;
+	font-size:18px;
+}
+
+/*右边部分响应式调试*/
+@media screen and (max-width: 360px) {
+	/*进度条小屏消失*/
+	.jumbotron .progress{
+		display:none;
+	}
+	.my_skill{
+		padding-left:0;
+	}
+}
+@media screen and (min-width:768px) and (max-width: 992px) {
+	.proj_exp img{
+		min-height:135px;
+	}
+}
+@media screen and (min-width:992px) and (max-width: 1199px) {
+	.proj_exp img{
+		min-height:181px;
+	}
+}
+
+@media screen and (min-width:768px) and (max-width: 1199px) {
+	.left_section blockquote{
+		margin-top:40px;
+	}
+}
+footer{
+	color:#fff;
+}
