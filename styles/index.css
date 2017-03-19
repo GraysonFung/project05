@@ -1,7 +1,16 @@
 body{
-	margin-bottom:15px;
+	margin-bottom:5px;
 }
-
+/*头部样式*/
+.head_link{
+	margin-top:15px;
+}
+@media screen and (max-width: 490px) {
+	/*头部链接消失*/
+	.head_link{
+		display:none;
+	}
+}
 /*页面左部分元素样式设置*/
 .left_section blockquote{
 	margin-top:10px;
@@ -144,12 +153,12 @@ body{
 		min-height:181px;
 	}
 }
-
 @media screen and (min-width:768px) and (max-width: 1199px) {
 	.left_section blockquote{
 		margin-top:40px;
 	}
 }
+/*底部样式*/
 footer{
 	color:#fff;
 }
