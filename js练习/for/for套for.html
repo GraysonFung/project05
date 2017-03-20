@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>this</title>
+<style>
+body{margin:0;background:#CCC;}
+ul{margin:0;padding:0;}
+
+li{width:166px;height:102px;border:1px solid #FFF;position--:absolute;list-style:none;}
+</style>
+<script>
+window.onload = function () {
+	var oWrap = document.getElementById('wrap');
+
+	var aUl = oWrap.getElementsByTagName('ul');
+	var aLi = null;
+	for ( i=0;i<aUl.length;i++){
+		aLi = aUl[i].getElementsByTagName('li');
+		
+		for ( j=0;j<aLi.length;j++){
+			aLi[j].style.cssText ='border:red solid 1px;';
+		}
+	}	
+};
+</script>
+</head>
+
+<body>
+<div class="wrap" id="wrap">
+	<ul id="list1">
+    	<li>
+        	<div></div>
+        </li>
+    	<li>
+        	<div></div>
+        </li>
+
+    	<li>
+        	<div></div>
+        </li>
+    </ul>
+	<ul id="list2">
+    	<li>
+        	<div></div>
+        </li>
+    	<li>
+        	<div></div>
+        </li>
+
+    	<li>
+        	<div></div>
+        </li>
+    </ul>
+	<ul id="list3">
+    	<li>
+        	<div></div>
+        </li>
+    	<li>
+        	<div></div>
+        </li>
+
+    	<li>
+        	<div></div>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

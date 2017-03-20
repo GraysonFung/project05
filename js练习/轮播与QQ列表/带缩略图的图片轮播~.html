@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>带缩略图的图片轮播</title>
+<style>
+body,h2,ul{margin:0;}
+li{list-style:none;}
+a{text-decoration: none;}
+body{background:black;}
+.wrap{margin:50px auto;background:#fff;width:650px;padding:50px;height:470px;border-radius: 5px;position:relative;text-align: center;}
+h2{font-size: 26px;line-height:40px;}
+.pic{display: inline-block;}
+#img{width:600px;height:400px;border:10px gray solid;border-radius: 5px;display:block;}
+input{width:50px;height:50px;font-size:30px;line-height: 40px;font-weight: bold;background:black;color:#fff;opacity:0.7;filter=alpha(opacity:50);border-radius:50%;position:absolute;top:48%;overflow: hidden;}
+.btn1{left:100px;}
+.btn2{right:100px;}
+ul{position:absolute; bottom:30px;display: inline-block;}
+li{width:15px;height:15px;background:gray;border-radius:50%;float:left;margin-left: 5px;font-size: 10px;position:relative;}
+li div{position:absolute;width:200px;height:100px;background:red;top:-110px;left:-92px;display:none;background: url(image2/ico2.gif) no-repeat center bottom;padding-bottom:10px;;}
+li div img{width:200px;height:100px;border:2px gray solid;border-radius:8px}
+</style>
+<script>
+window.onload = function (){
+	var oPre  = document.getElementById('pre');
+	var oNext = document.getElementById('next');
+	var oImg  = document.getElementById('img');
+	var oList = document.getElementById('list');
+	var aImg  = ['image2/1.JPG','image2/2.JPG','image2/3.JPG','image2/4.JPG','image2/5.JPG','image2/6.JPG']
+	var aLi   = document.getElementsByTagName('li')
+	var arrDiv= oList.getElementsByTagName('div')
+	var num   = 0 ;
+
+	for (var i = 0; i < aImg.length; i++) {
+		oList.innerHTML += '<li><div></div></li>';
+		// aLi[0].className = 'active';
+	}
+
+	// 初始化：
+	oImg.src = aImg[num];
+	// aLi[num].style.background='yellow';
+
+
+	oNext.onclick = function (){
+		num++;
+		if (num==aImg.length) {
+			num=0;
+		}
+		oImg.src = aImg[num];
+
+	};
+	oPre.onclick = function (){
+		if (num==0) {
+			num=aImg.length;
+		}
+		num--;
+		oImg.src = aImg[num];
+	};
+	for (var i = 0; i < aLi.length; i++) {
+		aLi[i].index =i ;
+		aLi[i].onclick = function (){
+			oImg.src = aImg[this.index];
+		};
+		aLi[i].onmouseover = function(){
+			arrDiv[this.index].style.display = 'block';
+			arrDiv[this.index].innerHTML = '<img src="'+aImg[this.index]+'"/>'
+		};
+		aLi[i].onmouseout = function(){
+			arrDiv[this.index].style.display = 'none';
+		};
+
+	}
+};
+</script>
+</head>
+<body>
+	<div class="wrap">
+	<h2>小雷山之行</h2>
+		<div class="pic">
+			<input class="btn1" id="pre" type="button" value="<">
+			<input class="btn2" id="next" type="button" value=">">
+			<ul id="list">
+				<!-- <li></li> -->
+			</ul>
+			<img id="img" src="" alt="">
+		</div>
+	</div>
+</body>
+</html>

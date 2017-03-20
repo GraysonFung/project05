@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>手机发讯息</title>
+<link href="web/css/index.css"  rel="stylesheet" />
+<script>
+
+window.onload = function(){
+	var oText = document.getElementById('text');
+	var oText1 = document.getElementById('text1');
+	var oBtn1 = document.getElementById('btn1');
+	var oBtn2 = document.getElementById('btn2');
+	var oLeft = document.getElementById('left');
+	var oRight = document.getElementById('right');
+	var  oNoff = true;
+ 	oBtn1.onclick = function() {
+		if ( oNoff == true ) {
+			oBtn1.src=('image/biao2.gif');
+			oNoff =false;
+		}else if(oNoff ==false){
+			oBtn1.src=('image/biao1.gif');
+			oNoff =true;
+		};
+	};
+	oBtn2.onclick = function() {
+		if(oText1.value==''){
+			alert('兄弟，写点什么吧~');
+		} else if ( oNoff == true ) {
+			oText.innerHTML='<div class="clear"><div class="right_img"><img src="'+oBtn1.src+'"/></div><p class=right>'+oText1.value+'</p></div>'+oText.innerHTML;
+			oText1.value='';
+		}else{
+			oText.innerHTML='<div class="clear"><div class="left_img"><img src="'+oBtn1.src+'"/></div><p class=left>'+oText1.value+'</p></div>'+oText.innerHTML;
+			oText1.value='';
+		};
+
+	};
+};
+</script>
+</head>
+
+<body>
+<div class="wrap">
+	<div class="text" id="text">
+
+    </div>
+    <div class="input">
+			<span  class="btn1" ><img src="image/biao1.gif" id="btn1"/></span>
+            <input  id="text1" type="text"  value=""/>
+            <input id="btn2" type="button" value="发送"/>
+        </div>
+</div>
+</body>
+</html>

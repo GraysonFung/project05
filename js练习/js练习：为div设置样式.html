@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+body{margin:0;}
+input{ cursor: pointer;}
+.text{padding:20px;}
+#btn{color:#FFF;background:#F00;border:none;height:30px;}
+#box{width:100px;height:100px;border:3px solid #000;margin:20px;}
+#cover{position: absolute;width:100%;height:100%;background:#000;top:0;left:0; opacity:0.5; filter:alpha(opacity=50); display:none;}
+#cover_btn{width:260px;height:160px;background:#FFF;border:#999 solid 20px; opacity:1;filter:alpha(opacity=100);  position:absolute;left:50%;top:50%;margin-left:-170px;margin-top:-120px;padding:20px; display:none;}
+#cover_btn div{padding-top:10px;text-align:right;}
+#cover_btn div input{width:40px;height:30px;}
+#btn1{background:red; border:none;color:#FFF;}
+#btn2{background:#F60; border:none;color:#FFF;}
+#btn3{background:blue; border:none;color:#FFF;}
+#cover_btn #btn_btn{text-align:center;}
+#btn_btn .btn10{background:#006;border:none;width:80px;color: #CCC;}
+</style>
+</head>
+
+<body>
+<div class="text">
+	<strong>请为下面的DIV设置样式：</strong>
+    <input type="button" value="点击设置"  id="btn"/>
+</div>
+<div id="box"></div>
+<div id="cover"></div>
+<div id="cover_btn">
+    <div>
+    <span>请选择背景色：</span>
+    <input type="button" value="红" class="btn1" id="btn1" />
+    <input type="button" value="黄" class="btn2" id="btn2"  />
+    <input type="button" value="蓝" class="btn3" id="btn3" />
+    </div>
+    <div>
+    <span>请选择宽(px)：</span>
+    <input type="button" value="200" class="btn4" id="btn4" />
+    <input type="button" value="300" class="btn5" id="btn5" />
+    <input type="button" value="400" class="btn6" id="btn6" />
+    </div>
+    <div>
+    <span>请选择高(px)：</span>
+    <input type="button" value="200" class="btn7" id="btn7" />
+    <input type="button" value="300" class="btn8" id="btn8" />
+    <input type="button" value="400" class="btn9" id="btn9" />
+    </div>
+    <div id="btn_btn">
+    <input type="button" value="恢复" class="btn10" id="btn10" />
+    <input type="button" value="确认" class="btn10" id="btn11" />
+    </div>
+</div>
+<script>
+
+	var oBtn =document.getElementById("btn");
+	var oBtn1=document.getElementById("btn1");
+	var oBtn2=document.getElementById("btn2");
+	var oBtn3=document.getElementById("btn3");
+	var oBtn4=document.getElementById("btn4");
+	var oBtn5=document.getElementById("btn5");
+	var oBtn6=document.getElementById("btn6");
+	var oBtn7=document.getElementById("btn7");
+	var oBtn8=document.getElementById("btn8");
+	var oBtn9=document.getElementById("btn9");
+	var oBtn10=document.getElementById("btn10");
+	var oBtn11=document.getElementById("btn11");
+	var oCover=document.getElementById("cover");
+	var oCover_btn=document.getElementById("cover_btn");
+	var oBox  =document.getElementById("box");
+
+	oBtn.onclick = function (){
+			oCover.style.display="block";
+			oCover_btn.style.display="block";
+		};
+	oBtn1.onclick = function() {
+			oBox.style.background="red";
+		};
+	oBtn2.onclick = function() {
+			oBox.style.background="yellow";
+		};
+	oBtn3.onclick = function() {
+			oBox.style.background="blue";
+		};
+	oBtn4.onclick = function() {
+			oBox.style.width="200px";
+		};
+	oBtn5.onclick = function() {
+			oBox.style.width="300px";
+		};
+	oBtn6.onclick = function() {
+			oBox.style.width="400px";
+		};
+	oBtn7.onclick = function() {
+			oBox.style.height="200px";
+		};
+	oBtn8.onclick = function() {
+			oBox.style.height="300px";
+		};
+	oBtn9.onclick = function() {
+			oBox.style.height="400px";
+		};
+	oBtn10.onclick = function() {
+			oBox.style.height="100px";
+			oBox.style.width="100px";
+			oBox.style.background="none";
+		};
+	oBtn11.onclick = function() {
+			oCover.style.display="none";
+			oCover_btn.style.display="none";
+		};
+
+
+</script>
+
+</body>
+</html>

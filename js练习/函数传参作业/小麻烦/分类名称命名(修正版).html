@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>添加更改</title>
+</head>
+<style>
+body{margin:0;}
+ul{margin:0;padding:0;}
+li{list-style:none;}
+/* css reset */
+body{background:gray;padding:100px;}
+ul{background:#A9EA80;}
+ul strong{color:#fff;padding:10px 20px;line-height:18px;font-size:18px;display:block;}
+ul strong input{float:right;margin-right:50px;}
+ul li{background:#fff;border-bottom:2px solid green;padding:2px 15px;height:30px;line-height:30px;}
+ul li input{margin-left:20px;}
+</style>
+<script>
+window.onload = function(){
+	var aUl = document.getElementsByTagName('ul')[1];
+	var oBtn = document.getElementById('addBtn');
+	var aLi = null;
+	oBtn.onclick =function (){
+		aUl.innerHTML += '<li><span>默认列表名</span><input type="button" value="更改" /></li>';
+		show();
+	};
+	show();
+	function show(){
+		aLi = document.getElementsByTagName('li');
+		for (var i = 0; i < aLi.length; i++) {
+			change(aLi[i]);
+		}
+	}
+	function change(li){
+		var oButton  = li.getElementsByTagName('input')[0];
+		var oOldtext = null;
+		var aBut_next = null;
+		oButton.onclick = function (){
+			oOldtext = li.innerHTML;
+			li.innerHTML = '<input type="text" /><input type="button" value="保存" /><input type="button" value="取消" />'
+			aBut_next = li.getElementsByTagName('input');
+			aBut_next[2].onclick = function(){
+				li.innerHTML = oOldtext;
+				show();
+			};
+			aBut_next[1].onclick = function(){
+				if (aBut_next[0].value=='') {
+					alert('列表名不能为空！');
+				} else {
+					li.innerHTML = aBut_next[0].value +'<input type="button" value="更改" />';
+				}
+				show();
+			};
+		};
+	};
+};
+</script>
+<body>
+<ul>
+	<strong>分类名称<input type="button" value="添加" id="addBtn"  /></strong>
+</ul>
+<ul>
+	<li><span>默认列表名</span><input type="button" value="更改" /></li>
+	<li><span>默认列表名</span><input type="button" value="更改" /></li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>更改</title>
+</head>
+<style>
+body{margin:0;}
+ul{margin:0;padding:0;}
+li{list-style:none;}
+/* css reset */
+body{background:gray;padding:100px;}
+ul{background:#A9EA80;}
+ul strong{color:#fff;padding:10px 20px;line-height:18px;font-size:18px;display:block;}
+ul strong input{float:right;margin-right:50px;}
+ul li{background:#fff;border-bottom:2px solid green;padding:2px 15px;height:30px;line-height:30px;}
+ul li input{margin-left:20px;}
+</style>
+<script>
+window.onload = function(){
+	show();
+	function show(){
+		var aUl = document.getElementsByTagName('ul')[0];
+		var aBtn = aUl.getElementsByTagName('input')[0];
+		var aLi = document.getElementsByTagName('li');
+
+
+		aBtn.onclick =function (){
+			aUl.innerHTML += '<li><span>默认列表名</span><input type="button" value="更改" /></li>';
+			show();
+		};
+// 传参：
+		for (var i = 0; i < aLi.length; i++) {
+			change(aLi[i]);
+		}
+		// ？？只有点了第一项才能进行下一项？？上同
+		// change(aLi[0]);
+		// change(aLi[1]);
+		function change(oLi){
+			var oSpan = oLi.getElementsByTagName('span')[0];
+			var oInput = oLi.getElementsByTagName('input')[0];
+			oInput.onclick = function(){
+				oOld = oLi.innerHTML; //全局变量
+				oSpan.style.display = 'none';
+				oInput.style.display = 'none';
+				oLi.innerHTML = '<input type="text" /><input type="button" value="保存" /><input type="button" value="取消" />'
+				show();
+			};
+			var aInput = oLi.getElementsByTagName('input');
+			aInput[1].onclick = function(){
+				if (aInput[0].value =='') {
+					alert('列表名不能为空！')
+				}else{
+					oLi.innerHTML = '<span>'+aInput[0].value+'</span><input type="button" value="更改" />';
+				}
+				show();
+			};
+			aInput[2].onclick = function(){
+				oLi.innerHTML = oOld;
+				show();
+			};
+		};
+	};
+};
+</script>
+<body>
+<ul>
+	<strong>分类名称<input type="button" value="添加"  /></strong>
+	<li><span>默认列表名</span><input type="button" value="更改" /></li>
+	<li><span>默认列表名</span><input type="button" value="更改" /></li>
+</ul>
+
+</body>
+</html>
