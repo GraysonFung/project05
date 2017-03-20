@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>选择符</title>
+<style>
+#box1{width:100px;height:100px;background:blue; border:#000 solid 1px;}
+#box2,#box4,#box3{width:100px;height:100px;background:blue; border:#000 solid 1px;}
+/*     
+id 选择符    群组
+*/
+.box{width:100px;height:100px;background:blue; border:#000 solid 1px;}
+.box1{border:#F00 solid 2px;}
+.box2{background:#6FC;}
+/*
+class 选择符（ 可以重复的id选择符 ）
+*/
+p{background:#666;}
+/*
+类型  选择符
+*/
+div p{background: #03F; width:100px; height:100px;}
+div span p{width:150px;}
+/*
+包含 选择符
+*/
+*{border:#0F6 2px solid; width:600px;}
+/*
+通配符
+*/
+
+</style>
+
+
+</head>
+
+<body>
+      <div id="box1">块</div>
+      <div id="box2">块</div>
+      <div id="box3">块</div>
+      <div id="box4">块</div><br /><br /><br />
+      
+      
+      <div class="box">块</div>
+      <div class="box box1">块</div>
+      <div class="box box2">块</div>
+      <div class="box">块</div>         <br/>
+      
+      <p>段</p>
+      <p>段</p>
+      <p>段</p>
+      <p>段</p>   <br />
+      
+      <div>
+          <p>p1</p>
+      </div>
+      <div>
+          <p>p2</p>
+      </div>
+      <div>
+             <span><p>p3</p></span>
+      </div>
+      
+</body>
+</html>

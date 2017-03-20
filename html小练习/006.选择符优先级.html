@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>选择符优先级</title>
+<style>
+ol li{background:#0FF;}                        /*   优先级（1+1) */
+li{height:50px; background:yellow;}      /*  优先级（1） */
+ol li{background: #099;}                        /*   优先级（1+1) */ 
+ol .box{background:#999;}                    /*   优先级（10+1) */
+.box{background:#03C;}                       /*   优先级（10）*/                   
+.box4{background:#FF0;}
+#box1,#box2,#box3{background:#066;}       /*   优先级（100）*/
+/*
+css样式，同等优先级，后者覆盖前者
+
+类型（1）<class(10) < id(100) <行间样式(1000) < js
+*/
+</style>
+
+</head>
+
+<body>
+    <ol>
+       <li class="box" id="box1" style="background:#060"></li>
+       <li class="box" id="box2"></li>
+       <li class="box" id="box3"></li>
+       <li class="box box4" ></li>
+       <li class="box4"></li>
+       <li class="box"></li>
+       <li></li>
+       <li></li>
+       <li></li>
+    
+    </ol>
+
+
+</body>
+</html>
