@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>多列登高</title>
+<style>
+.wrap{
+	width:80%;
+	background:gray;
+}
+.div1{
+	width:35%;
+	background:blue;
+	height:400px;
+	float:right;
+}
+.div2{
+	width:35%;
+	background:pink;
+	height:450px;
+}
+/*多列登高的padding-bottom,margin-bottom抵消法*/
+.wrap{
+	overflow:hidden;
+}
+.div1{
+	padding-bottom:1000px;
+	margin-bottom:-1000px;
+}
+
+
+</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="div1">
+		</div>
+		<div class="div2">
+		</div>
+	</div>
+</body>
+</html>
