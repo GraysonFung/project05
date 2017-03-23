@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>css滑动门</title>
+<style>
+body,ul{margin:0;}
+ul{padding:0;}
+li{list-style:none;}
+a{ text-decoration:none;color:#ffffff;font-size:14px;}
+.wrap{background:#23232f;margin:50px auto;padding:50px;}
+.left{float:left;background:#0f0f14 url(1.gif) no-repeat;}
+.right{float:left;background:url(2.gif) no-repeat  right 0;padding:4px 3px 0 4px;}
+li{float:left; background: url(3.gif) no-repeat;margin-right:1px; }
+li a{float:left;background:url(4.gif)  no-repeat right 0;}
+span{display:block;float:left;padding:0 18px;line-height:30px;}
+a:hover,li .active{background: url(5.gif) no-repeat;}
+a span:hover,li .active span{background: url(6.gif) no-repeat right;}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+	<div class="left">
+    	<ul class="right">
+        	<li><a href="1.html" class="active"><span>冯高升</span></a></li>
+            <li><a href="2.html"><span>冯星光</span></a></li>
+            <li><a href="3.html"><span>冯光淼</span></a></li>
+            <li><a href="4.html"><span>css课程</span></a></li>
+            <li><a href="5.html"><span>滑动门</span></a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>a的4个伪类</title>
+<style>
+a:link{ font-size:20px;color: #3F6; text-decoration:none;}
+a:visited{font-size:50px; color:#00F;}
+a:hover{color:red; font-size:40px;}
+a:active{font-size:30px; color:#C93;}
+div{width:500px; height:50px; background:#966;}
+div:hover{background:#93C;}
+/*
+        link            未访问（默认）
+		hover         鼠标悬停（鼠标划过）
+		active         链接激活（鼠标按下）
+		visited        访问过后（点击过后）	
+   A四个伪类的顺序：
+	link    visited    hover  active
+	（love hate 记忆方法！）
+	
+a伪类的应用：
+a、四个伪类全用(搜索引擎、新闻门户、小说网站)
+b、一般网站只用（ a{}   a:hover{}  ）
+
+IE6不支持a以外其它任何标签的伪类；
+IE6以上的浏览器支持所有标签的hover伪类；
+*/
+</style>
+</head>
+
+<body>
+<a href="#">点我点我啊</a>
+<div></div>
+</body>
+</html>
