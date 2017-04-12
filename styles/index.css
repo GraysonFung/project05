@@ -10,10 +10,16 @@ body{
 	.head_link{
 		display:none;
 	}
+
+	#right_section .jumbotron{
+		padding:10px;
+		margin:0 -25px;
+	}
 }
 /*页面左部分元素样式设置*/
 .left_section blockquote{
-	margin-top:10px;
+	margin-top:0px;
+	margin-bottom:2px;
 	border-left: 0;
 }
 .my_pic{
@@ -22,7 +28,10 @@ body{
 }
 #left_table tr td{
 	border-top:none;
-	padding:5px 10px;
+	padding:5px 0;
+}
+#left_table{
+	padding-left:35px;
 }
 #left_table{
 	display: inline-block;
@@ -32,9 +41,13 @@ body{
 #left_table tr:hover{
 	background:#DCD8D8;
 }
-.per_int{
+.per_lab{
 	display:inline-block;
 	width:150px;
+}
+.per_int{
+	text-indent:2em;
+	padding-left:16px;
 }
 .my_add .row {
 	margin-top:8px;
@@ -56,23 +69,39 @@ body{
 
 /*页面左部分响应式调试*/
 @media screen and (min-width: 768px) and (max-width: 1199px){
+	.left_section blockquote{
+		margin-top:20px;
+	}
   .my_add .row div:first-child{
   	width:90px;
   	margin-top:5px;
   }
   .my_add .row div:nth-child(2){
-		/*text-indent:2em;*/
-		padding-left:24px;
+		padding-left:30px;
+		width:200px;
   }
 	.my_add .row {
 		margin-top:4px;
 		margin-left:10px;
 	}
 }
-@media screen and (max-width: 768px) {
+
+@media screen and (min-width:768px) and (max-width: 991px) {
+	.per_int{
+		padding-left:0;
+		width:200px;
+	}
+}
+@media screen and (max-width: 767px) {
 	.my_add{
 		width:260px;
+		padding-left:20px;
 		display:inline-block;
+	}
+	.per_int{
+		display: inline-block;
+		padding-left:0;
+		width:260px;
 	}
 }
 
@@ -139,6 +168,7 @@ body{
 	.jumbotron .progress{
 		display:none;
 	}
+
 	.my_skill{
 		padding-left:0;
 	}
@@ -153,11 +183,7 @@ body{
 		min-height:181px;
 	}
 }
-@media screen and (min-width:768px) and (max-width: 1199px) {
-	.left_section blockquote{
-		margin-top:40px;
-	}
-}
+
 /*底部样式*/
 footer{
 	color:#fff;
