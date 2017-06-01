@@ -175,15 +175,15 @@ function studyWeb(){
 		var text_box = $(this).parent().find(".add-num");
 		var praise_txt = $(this).parent().find(".praise-txt");
 		var num=parseInt(praise_txt.text());
-		if(praise_img.attr("src") == ("Images/yizan.png")){
-			$(this).html("<img src='Images/zan.png' class='praise-img' class='animation' />");
+		if(praise_img.attr("src") == ("images/yizan.png")){
+			$(this).html("<img src='images/zan.png' class='praise-img' class='animation' />");
 			praise_txt.removeClass("hover");
 			text_box.show().html("<em class='add-animation'>-1</em>");
 			$(".add-animation").removeClass("hover");
 			num -=1;
 			praise_txt.text(num)
 		}else{
-			$(this).html("<img src='Images/yizan.png' class='praise-img' class='animation' />");
+			$(this).html("<img src='images/yizan.png' class='praise-img' class='animation' />");
 			praise_txt.addClass("hover");
 			text_box.show().html("<em class='add-animation'>+1</em>");
 			$(".add-animation").addClass("hover");
@@ -204,15 +204,15 @@ function studyArticle(){
 		var text_box = $("#add-num");
 		var praise_txt = $("#praise-txt");
 		var num=parseInt(praise_txt.text());
-		if(praise_img.attr("src") == ("Images/yizan.png")){
-			$(this).html("<img src='Images/zan.png' id='praise-img' class='animation' />");
+		if(praise_img.attr("src") == ("images/yizan.png")){
+			$(this).html("<img src='images/zan.png' id='praise-img' class='animation' />");
 			praise_txt.removeClass("hover");
 			text_box.show().html("<em class='add-animation'>-1</em>");
 			$(".add-animation").removeClass("hover");
 			num -=1;
 			praise_txt.text(num)
 		}else{
-			$(this).html("<img src='Images/yizan.png' id='praise-img' class='animation' />");
+			$(this).html("<img src='images/yizan.png' id='praise-img' class='animation' />");
 			praise_txt.addClass("hover");
 			text_box.show().html("<em class='add-animation'>+1</em>");
 			$(".add-animation").addClass("hover");
