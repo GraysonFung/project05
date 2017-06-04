@@ -1,4 +1,7 @@
 /*                  公共部分                 */
+html{
+    overflow-x: hidden;/*消除横向滚动条*/
+}
 body{
 	background:#fff;
 	overflow-x: hidden;/*消除横向滚动条*/
