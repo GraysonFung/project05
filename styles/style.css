@@ -166,6 +166,7 @@ a,a:link,a:visited,a:focus{
 
 /*mainbody的banner图*/
 .base-banner-bottom{
+    margin:0;
 	position:relative;
 	margin:0;
 	z-index: -1;
@@ -784,7 +785,9 @@ padding:0 2px;
 .aboutus_team_three{
      background:url(../images/aboutus_bgtwo.jpg) no-repeat;
      background-position:bottom;
-     background-size:100%;}
+     background-size:100%;
+     margin:0;
+ }
 .aboutus_team_three_right{
      background-color:#fff;
      border:#d71718 solid 1px;
@@ -959,6 +962,10 @@ padding:0 2px;
 /*案例详细*/
 .case-detail{
     padding:2% 0;
+}
+.case-detail .row{
+    margin-left:0;
+    margin-right:0;
 }
 .webcase_contentthree_right{
     height:260px;
